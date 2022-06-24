@@ -1,0 +1,246 @@
+{% include 'header.html' %}
+  <!-- Content Wrapper. Contains page content -->
+    <!-- Content Header (Page header) -->
+    <div class="content-header" style="border-bottom: 2px rgba(44, 44, 44, 0.4) solid; border-radius: 5px; padding-top: 20px;">
+      <div class="container-fluid" >
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Dashboard</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard v1</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content"  style="border-bottom: 2px rgba(44, 44, 44, 0.4) solid; border-radius: 5px; padding-top: 20px;">
+      <div class="container">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+            <div class="col-sm">
+                <!-- small box -->
+                <div class="small-box bg-success">
+                  <div class="inner">
+                    <h3>5<sup style="font-size: 20px"></sup></h3>
+                    <p>Jumlah Ruangan</p>
+                  </div>
+                  <div class="icon">
+                    <!-- <i class="ion ion-stats-bars"></i> -->
+                    <i class="fa fa-building-o" aria-hidden="true"></i>
+                  </div>
+                  <a type="button" data-toggle="modal" data-target="#Ruangan" href="#" class="small-box-footer">Tambah Ruangan <i class="fas fa-arrow-circle-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm">
+                <!-- small box -->
+                <div class="small-box bg-warning">
+                  <div class="inner">
+                    <h3>2</h3>
+                    <p>Event Berlangsung</p>
+                  </div>
+                  <div class="icon">
+                    <!-- <i class="ion ion-person-add"></i> -->
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                  </div>
+                  <a type="button" data-toggle="modal" data-target="#Ruangan" href="#" class="small-box-footer">Tambah Event <i class="fas fa-arrow-circle-right"></i>
+                  
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm">
+                <!-- small box -->
+                <div class="small-box bg-danger">
+                  <div class="inner">
+                    <h3>65</h3>
+                    <p>Unique Visitors</p>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-pie-graph"></i>
+                  </div>
+                  <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  <!-- /.content-wrapper -->
+</div>
+
+<div class="modal fade" id="Ruangan">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Ruangan</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card card-primary">
+              <form role="form">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="name">Nama Ruangan</label>
+                    <input type="name" class="form-control" id="name" placeholder="Nama Ruangan">
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Gedung</label>
+                    <input type="name" class="form-control" id="name" placeholder="Gedung">
+                  </div>
+                  <!-- <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="exampleInputFile">
+                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                      </div>
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="">Upload</span>
+                      </div>
+                    </div>
+                  </div> -->
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+
+                <!-- <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div> -->
+              </form>
+            </div>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<div class="modal fade" id="event">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Event</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card card-primary">
+              <form role="form">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="name">Nama Event</label>
+                    <input type="name" class="form-control" id="name" placeholder="Nama Ruangan">
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Tempat</label>
+                    <input type="name" class="form-control" id="name" placeholder="Gedung">
+                  </div>
+                  <!-- <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="exampleInputFile">
+                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                      </div>
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="">Upload</span>
+                      </div>
+                    </div>
+                  </div> -->
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+
+                <!-- <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div> -->
+              </form>
+            </div>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<div class="modal fade" id="">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Ruangan</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card card-primary">
+              <form role="form">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="name">Nama Ruangan</label>
+                    <input type="name" class="form-control" id="name" placeholder="Nama Ruangan">
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Gedung</label>
+                    <input type="name" class="form-control" id="name" placeholder="Gedung">
+                  </div>
+                  <!-- <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="exampleInputFile">
+                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                      </div>
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="">Upload</span>
+                      </div>
+                    </div>
+                  </div> -->
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+
+                <!-- <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div> -->
+              </form>
+            </div>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+
+<script>
+
+</script>
+{% include 'footer.html' %}
